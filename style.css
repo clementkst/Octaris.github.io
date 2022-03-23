@@ -1,0 +1,539 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+
+body {
+  background: linear-gradient(
+    90deg,
+    rgba(18, 19, 19, 1) 0%,
+    rgba(67, 67, 78, 1) 35%,
+    rgba(51, 51, 57, 1) 70%,
+    rgba(18, 19, 19, 1) 100%
+  );
+  color: white;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+  transition: 3s ease-out;
+}
+.bodyv2 {
+  background: #232526;
+  background: -webkit-linear-gradient(to right, #232526, #414345);
+  background: linear-gradient(to right, #232526, #414345);
+  color: white;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+  transition: 3s ease-out;
+}
+#TopComplet {
+  color: rgb(214, 214, 214);
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  min-height: 15%;
+  width: 100%;
+  height: 65px;
+  position: sticky;
+  top: 0px;
+  overflow: hidden;
+  z-index: 30;
+  -webkit-box-shadow: 0px 0px 11px 7px rgba(0, 0, 0, 0.78);
+  box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.78);
+}
+#TopGauche {
+  text-transform: uppercase;
+  color: transparent;
+  font-family: "Kanit", sans-serif;
+  width: 50%;
+  text-align: left;
+}
+#TopDroite {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+  width: 50%;
+  text-align: right;
+  letter-spacing: 3px;
+  top: 10%;
+  padding-right: 0%;
+}
+li {
+  display: inline-block;
+  margin-left: 30px;
+  padding-bottom: 100px;
+  padding-right: 0px;
+}
+ul {
+  list-style-type: none;
+  position: relative;
+  top: 0px;
+  right: 40px;
+  padding-right: 0px;
+}
+h1 {
+  display: inline;
+  position: relative;
+  margin-left: 30px;
+  font-size: 46px;
+  letter-spacing: 2px;
+  background: url(./images/backTexte.jpg) center/cover;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+}
+h2 {
+  display: inline;
+  position: relative;
+  margin-left: 10px;
+  font-size: 46px;
+  letter-spacing: 1px;
+  background: url(./images/backTexte.jpg) center/cover;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(231, 171, 41);
+}
+#defilant {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+  position: relative;
+  -webkit-box-shadow: 0px 3px 6px -1px #ffffff;
+  box-shadow: 0px 1px 6px -1px #bebbbb;
+}
+
+#homeFond {
+  width: 100%;
+}
+.defilante1 {
+  animation-duration: 1.5s;
+  animation-name: fond1;
+  -webkit-box-shadow: 0px 3px 6px -1px #b41010;
+  box-shadow: 0px 3px 3px -1px #a80d0d;
+}
+.defilante {
+  animation-duration: 1.5s;
+  animation-name: fond0;
+  -webkit-box-shadow: 0px 3px 6px -1px #ffffff;
+  box-shadow: 0px 3px 3px -1px #ffffff;
+}
+#decoupeBack {
+  background-color: #1d1e1f;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-left: 3px groove rgba(255, 255, 255, 0.08);
+  border-right: 3px groove rgba(255, 255, 255, 0.08);
+}
+#maps,
+#equipements {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  color: rgb(218, 218, 218);
+  font-weight: bolder;
+  font-size: 30px;
+  padding-top: 12%;
+  margin: 0px;
+  margin-top: -1px;
+  margin-bottom: 12%;
+  letter-spacing: 2px;
+}
+#equipements {
+  margin-top: 0px;
+  margin-bottom: 300px;
+}
+#listeEquipements {
+  color: black;
+  font-size: 40px;
+  font-weight: bolder;
+  text-align: center;
+  padding-top: 200px;
+  width: 250px;
+  overflow: hidden;
+  padding-left: 42%;
+}
+#flexBox {
+  position: relative;
+  width: auto;
+  height: auto;
+}
+#mapsBox1,
+#mapsBox2 {
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+#mapTotal {
+  object-fit: cover;
+  position: relative;
+  object-position: center;
+}
+.imgfbox,
+.imgfbox1 {
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+}
+#roulette {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  color: rgb(218, 218, 218);
+  font-weight: bolder;
+  font-size: 30px;
+  padding-bottom: 0%;
+  padding-top: 8%;
+  margin: 0px;
+  margin-top: -1px;
+  letter-spacing: 2px;
+  padding-bottom: px;
+}
+#rouletteBox {
+  padding: 10% 0% 2% 0%;
+}
+#boxPrincipal {
+  background-color: transparent;
+  width: 50%;
+  height: 700px;
+  margin-left: 25%;
+  margin-bottom: 2%;
+  position: relative;
+  z-index: 1;
+  -webkit-box-shadow: -3px -3px 7px 3px rgba(0, 0, 0, 0.88);
+  box-shadow: -3px -3px 7px 3px rgba(0, 0, 0, 0.88);
+  -webkit-box-shadow: 3px 3px 7px 3px rgba(0, 0, 0, 0.88);
+  box-shadow: 3px 3px 7px 3px rgba(0, 0, 0, 0.88);
+}
+#box1armure {
+  background-color: red;
+  width: 100%;
+  height: 33.3%;
+  position: absolute;
+  border-bottom: 2px inset #000000;
+  border-top: 2px inset #000000;
+  z-index: 21; /*  attention a l'index boite 2 doit être -1*/
+}
+#box2map {
+  background-color: rgb(35, 128, 70);
+  width: 100%;
+  height: 33.3%;
+  position: absolute;
+  top: 33.3%;
+  z-index: 20;
+}
+#box3arme {
+  background-color: rgb(109, 13, 138);
+  width: 100%;
+  height: 33.3%;
+  position: absolute;
+  top: 66.6%;
+  border-bottom: 2px inset #000000;
+  border-top: 2px inset #000000;
+  z-index: 20;
+}
+
+/* Border Boites */
+#box1armure,
+#case2armure,
+#box2map,
+#case2map,
+#box3arme,
+#case2arme {
+  border-left: 2px inset #000000;
+  border-right: 2px inset #000000;
+}
+/*--------------------------------------------- Cases Boites -------------------------------------------*/
+
+#case1armure {
+  z-index: 10;
+  background-color: rgb(86, 86, 92);
+  width: 33.33%;
+  height: 100%;
+  position: absolute;
+}
+#case2armure {
+  z-index: 11;
+  background-color: rgb(59, 194, 115);
+  width: 33.33%;
+  height: 100%;
+  position: absolute;
+  left: 33.33%;
+}
+#case3armure {
+  z-index: 10;
+  background-color: rgb(86, 86, 92);
+  width: 33.33%;
+  height: 100%;
+  position: absolute;
+  left: 66.66%;
+}
+#case1map {
+  color: black;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 40px;
+  z-index: 10;
+  background-color: rgb(86, 86, 92);
+  width: 33.33%;
+  height: 100%;
+  position: absolute;
+}
+#case2map {
+  text-align: center;
+  color: black;
+  font-size: 40px;
+  font-weight: bolder;
+  z-index: 11;
+  background-color: rgb(59, 194, 115);
+  width: 33.33%;
+  height: 100%;
+  position: absolute;
+  left: 33.33%;
+}
+#case3map {
+  text-align: center;
+  color: black;
+  font-weight: bolder;
+  font-size: 40px;
+  z-index: 10;
+  background-color: rgb(86, 86, 92);
+  width: 33.33%;
+  height: 100%;
+  position: absolute;
+  left: 66.66%;
+}
+#case1arme {
+  z-index: 10;
+  background-color: rgb(86, 86, 92);
+  width: 33.33%;
+  height: 100%;
+  position: absolute;
+}
+#case2arme {
+  z-index: 11;
+  background-color: rgb(59, 194, 115);
+  width: 33.33%;
+  height: 100%;
+  position: absolute;
+  left: 33.33%;
+}
+#case3arme {
+  z-index: 10;
+  background-color: rgb(86, 86, 92);
+  width: 33.33%;
+  height: 100%;
+  position: absolute;
+  left: 66.66%;
+}
+
+/*--------------------------------------------- Cases Boites -------------------------------------------*/
+
+#boxBoutton {
+  padding: 10% 0% 0% 0%;
+  width: 25%;
+  background-color: transparent;
+  height: 100%;
+  margin-left: 37.5%;
+  position: relative;
+}
+#boutton {
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+  width: 50%;
+  height: 40%;
+  position: absolute;
+  top: 0px;
+  left: 25%;
+}
+#start,
+#titre {
+  position: relative;
+  font-size: 46px;
+  bottom: 0%;
+  letter-spacing: 2px;
+  background: url(./images/backTexte.jpg) center/cover;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  text-transform: uppercase;
+  color: transparent;
+  font-family: "Kanit", sans-serif;
+  text-align: center;
+}
+
+@keyframes fond0 {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fond1 {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1930px) {
+  #start {
+    bottom: 10%;
+  }
+}
+#titre {
+  font-size: 40px;
+}
+#boxPrincipal {
+  height: 500px;
+  width: 50%;
+}
+@media screen and (max-width: 1630px) {
+  #start {
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 1330px) {
+  #start {
+    font-size: 28px;
+  }
+  li {
+    font-size: 12px;
+  }
+  #titre {
+    font-size: 28px;
+  }
+  #boxPrincipal {
+    height: 400px;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1080px) {
+  #TopDroite {
+    width: 30%;
+  }
+  #TopGauche {
+    display: block;
+    padding-top: 10px;
+    width: 70%;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  #titre {
+    font-size: 28px;
+  }
+  #boxPrincipal {
+    height: 300px;
+    width: 40%;
+    margin-left: 29%;
+  }
+  #start {
+    font-size: 18px;
+    top: 10%;
+  }
+  #mapsBox1,
+  #mapsBox2 {
+    flex-direction: column;
+    width: 50%;
+    padding-left: 15%;
+  }
+}
+@media screen and (max-width: 800px) {
+  #start {
+    font-size: 14px;
+  }
+  #boxPrincipal {
+    height: 200px;
+    width: 40%;
+    margin-left: 29%;
+  }
+}
+@media screen and (max-width: 600px) {
+  #start {
+    font-size: 10px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  #TopGauche {
+    display: block;
+    padding-top: 20px;
+    width: 70%;
+  }
+}
+@media screen and (max-width: 400px) {
+  #start {
+    font-size: 8px;
+  }
+  h1 {
+    font-size: 20px;
+    padding-top: 1%;
+  }
+  h2 {
+    font-size: 20px;
+    display: block;
+    margin-top: -3%;
+  }
+  #TopGauche {
+    display: block;
+    padding-top: 0px;
+    width: 80%;
+  }
+  #titre {
+    font-size: 16px;
+  }
+  #boxPrincipal {
+    height: 150px;
+    width: 40%;
+    margin-left: 29%;
+  }
+  #mapsBox1,
+  #mapsBox2 {
+    flex-direction: column;
+    width: 70%;
+    padding-left: 7%;
+  }
+  li {
+    display: block;
+    margin-left: 4px;
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 250px) {
+  #mapsBox1,
+  #mapsBox2 {
+    flex-direction: column;
+    width: 150px;
+    margin-left: 0%;
+  }
+  #boxPrincipal {
+    height: 100px;
+    width: 40%;
+    margin-left: 29%;
+  }
+  #start {
+    font-size: 4px;
+  }
+}

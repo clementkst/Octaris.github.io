@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TarkovRoulette</title>
+    <script defer src="script.js"></script>
+    <script defer src="defilant.js"></script>
+    <script defer src="background.js"></script>
+    <link rel="stylesheet" href='style.css' />
+
+</head>
+
+<body class="bodyv1">
+    <div id="TopComplet">
+        <div id="TopGauche">
+            <h1>Escape</h1>
+            <h2>from Tarkov</h2>
+        </div>
+        <div id="TopDroite">
+            <nav class="menu">
+                <ul>
+                    <li><a href="#homeFond" id="accueil">Accueil</a></li>
+                    <li><a href="#maps">Maps</a></li>
+                    <li><a href="#equipements">Equipements</a></li>
+                    <li><a href="#roulette">Roulette</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div id="homeFond">
+        <img src="./images/fond1.png" id="defilant">
+        <div id="suivant" onclick="changeSlide(1)">
+        </div>
+    </div>
+    </div>
+    <div id="decoupeBack">
+        <div id="maps"><div id="titre">Les maps</div></div>
+        <div id="flexBox">
+            <div id="mapsBox1">
+                <img src="./images/basemili.png" class="imgfbox1">
+                <img src="./images/litto.png" class="imgfbox1">
+                <img src="./images/usine.png" class="imgfbox1">
+            </div>
+            <div id="mapsBox2">
+                <img src="./images/bois.png" class="imgfbox">
+                <img src="./images/echangeur.png" class="imgfbox">
+                <img src="./images/labo.png" class="imgfbox">
+            </div>
+        </div>
+        <div id="equipements"><div id="titre">Les equipements</div>
+        <div id ="listeEquipements"></div>
+    </div>
+        <div id="roulette"><div id="titre">Roulette</div></div>
+        <div id="rouletteBox">
+            <div id="boxPrincipal">
+                <div id="box1armure">
+                <div id="case1armure"></div>
+                <div id="case2armure"></div>
+                <div id="case3armure"></div>
+            </div>
+                <div id="box2map">
+                <div id="case1map"></div>
+                <div id="case2map"></div>
+                <div id="case3map"></div>
+            </div>
+                <div id="box3arme">
+                <div id="case1arme"></div>
+                <div id="case2arme"></div>
+                <div id="case3arme"></div>
+            </div>
+        </div>
+                        
+
+                    
+
+                </div>
+                <div id="boxBoutton">
+                    <div id="boutton" href=""><div id="start">Start</div></div>
+                </div>
+            </div>
+    
+        
+    </div>
+</body>
+
+</html>
